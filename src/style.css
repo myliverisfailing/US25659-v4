@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@600&display=swap');
+
+:root {
+    --background-color: #0E2148; 
+    --header-color: #7965C1;       /*Make the colors into variables for easier changes*/
+    --border-color: #7965C1;
+    --text-color: #E3D095;
+    --hyperlink-color: #007FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+}
+
+.content h1 {
+    color: var(--header-color);
+    text-align: center;
+    padding: 10px;
+    font-family: 'REM', sans-serif;
+    font-size: 50px;
+}
+
+.content p {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--border-color);
+    font-family: 'REM', sans-serif;
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    width: 37vw;
+}
+
+.content img {
+    width: 200px;
+}
+
+.content a {
+    all: unset;
+    text-decoration: underline;
+    color: var(--hyperlink-color);
+    cursor: pointer;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100vw;
+    height: 20vh;
+    background-color: black;
+}
+
+footer a {
+    all: unset;
+    color: var(--text-color);
+    font-family: 'REM', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
