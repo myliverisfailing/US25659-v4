@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@600&display=swap');
+
+:root {
+    --text-color: #EDEADE;
+    --border-color: #EDEADE;
+    --link-color: #EDEADE;
+    --background-color: #000000;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url('./images/background.jpg');
+    background-color: var(--background-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+}
+
+.content h1 {
+    padding: 10px;
+    text-align: center;
+    font-family: 'REM', sans-serif;
+    color: var(--text-color);
+    font-size: 40px;
+}
+
+.content p {
+    text-align: center;
+    padding: 25px;
+    font-family: 'REM', sans-serif;
+    padding-bottom: 30px;
+    color: var(--text-color);
+    border-style: solid;
+    border-radius: 75px;
+    backdrop-filter: blur(50px);
+    border-color: var(--border-color);
+}
+
+.images {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.images img {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--border-color);
+    width: 250px;
+    height: 250px;
+    transition: transform .2s;
+    object-fit: cover;
+}
+
+.images img:hover {
+    transform: scale(1.1)
+}
+
+footer {
+    margin-top: 30px;
+    width: 100vw;
+    height: 15vh;
+    background-color: black;
+}
+
+footer a {
+    all: unset;
+    color: var(--link-color);
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+a {
+    all: unset;
+    color: cyan;
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor: pointer;
+}
